@@ -8,7 +8,7 @@ export default class Nav extends React.Component {
     return (
       <div className={ 'nav' }>
         <Link href='/'>
-          <img src={ '../static/FicDesigner.png' } className={ 'nav-icon' }/>
+          <img src={ `${process.env.ASSET_PREFIX}/static/FicDesigner.png` } className={ 'nav-icon' }/>
         </Link>
         <Search
           loading={ false }
