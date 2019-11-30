@@ -8,7 +8,7 @@ export default () => (
     <Header />
     <p>This is our homepage</p>
     <div>
-      <a href="/ficdesigner">FicDesigner</a>
+      <a href="/blog">Blog</a>
     </div>
     <div>
       <Link href="/about">
