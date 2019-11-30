@@ -1,0 +1,84 @@
+$grays: (
+  base: #808080,
+  dark: #595959,
+  darker: #323232,
+  light: #a6a6a6,
+  lighter: #ccc,
+);
+
+$themes: (
+  light: (
+    primary: (
+      base: #4cd1f6,
+      dark: #1291b4,
+      light: #9de7fa,
+      highlight: #ddf7fe,
+    ),
+    secondary: (
+      base: #fa7272,
+      dark: #c63434,
+      light: #fb8b8b,
+      highlight: #feb9ba,
+    ),
+    accent: (
+      base: #fee59e,
+      dark: #fdd86c,
+      light: #fff2d0,
+      highlight: #fff9e9
+    ),
+    neutrals: (
+      base: #fff9e9,
+      contrast: #03171c
+    ),
+    grays: $grays
+  ),
+  dark: (
+    primary: (
+      base: #4cd1f6,
+      dark: #1291b4,
+      light: #9de7fa,
+      highlight: #ddf7fe,
+    ),
+    secondary: (
+      base: #fa7272,
+      dark: #c63434,
+      light: #fb8b8b,
+      highlight: #feb9ba,
+    ),
+    accent: (
+      base: #fee59e,
+      dark: #fdd86c,
+      light: #fff2d0,
+      highlight: #fff9e9
+    ),
+    neutrals: (
+      base: #03171c,
+      contrast: #fff9e9
+    ),
+    grays: $grays
+  )
+);
+
+@function palette($color: 'primary', $tone: 'base', $theme: 'light') {
+  @if map-has-key($themes, $theme) {
+    $palette: map-get($themes, $theme);
+
+    @if map-has-key($palette, $color) {
+      $color: map-get($palette, $color);
+
+      @if map-has-key($color, $tone) {
+        $tone: map-get($color, $tone);
+        @return $tone;
+      }
+
+      @warn "unknown tone `#{$tone}` in `#{$color}`";
+      @return null;
+    }
+
+    @warn "unknown color `#{$color}` in `#{$theme}`";
+    @return null;
+  }
+
+  @warn "unknown theme `#{$theme}`";
+  @return null;
+}

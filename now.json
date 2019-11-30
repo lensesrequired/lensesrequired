@@ -1,14 +1,14 @@
 {
-  "name": "with-zones",
+  "name": "lensesrequired",
   "version": 2,
   "builds": [
-    { "src": "blog/next.config.js", "use": "@now/next" },
+    { "src": "ficdesigner/next.config.js", "use": "@now/next" },
     { "src": "home/next.config.js", "use": "@now/next" }
   ],
   "routes": [
-    { "src": "/blog/(_next|static)(.*)" },
-    { "src": "/blog(.*)", "dest": "blog/blog$1", "continue": true },
-    { "src": "(?!/?blog)(.*)", "dest": "home$1", "continue": true }
+    { "src": "/ficdesigner/(_next|static)(.*)" },
+    { "src": "/ficdesigner(.*)", "dest": "/ficdesigner/$1", "continue": true },
+    { "src": "(?!/?ficdesigner)(.*)", "dest": "/home$1", "continue": true }
   ],
   "build": {
     "env": {

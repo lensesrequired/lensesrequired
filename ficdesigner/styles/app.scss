@@ -1,0 +1,21 @@
+@import './colors.scss';
+
+body {
+  background-color: palette('primary', 'light');
+}
+
+.nav {
+  background-color: palette('primary', 'dark');
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+
+  .nav-icon {
+    margin: 8px;
+    height: 40px;
+  }
+
+  .search {
+    margin: 8px;
+  }
+}
