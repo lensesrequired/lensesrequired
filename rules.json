@@ -1,0 +1,5 @@
+{
+  "rules": [
+    { "pathname": "/ficdesigner", "dest": "ficdesigner.lensesrequired.com" }
+  ]
+}
