@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     async function getDate() {
-      const res = await fetch('/api/date');
+      const res = await fetch('/ficdesigner/api/date');
       const newDate = await res.json();
       setDate(newDate);
     }
