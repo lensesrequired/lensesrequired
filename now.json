@@ -8,7 +8,7 @@
   ],
   "routes": [
     { "src": "/ficdesigner/(_next|static)(.*)" },
-    { "src": "/ficdesigner(.*)", "dest": "https://ficdesigner.lensesrequired.com/$1", "continue": true },
+    { "src": "/ficdesigner(.*)", "status": 301, "headers": { "Location": "https://ficdesigner.lensesrequired.com/$1" } },
     { "src": "(?!/?ficdesigner)(.*)", "dest": "/home$1", "continue": true }
   ],
   "build": {
