@@ -1,19 +1,11 @@
 {
   "name": "lensesrequired",
   "version": 2,
-  "alias": ["ficdesigner.lensesrequired.com"],
   "builds": [
-    { "src": "ficdesigner/next.config.js", "use": "@now/next" },
     { "src": "home/next.config.js", "use": "@now/next" }
   ],
   "routes": [
-    { "src": "/ficdesigner/(_next|static)(.*)" },
     { "src": "/ficdesigner(.*)", "status": 301, "headers": { "Location": "https://ficdesigner.lensesrequired.com/$1" } },
     { "src": "(?!/?ficdesigner)(.*)", "dest": "/home$1", "continue": true }
-  ],
-  "build": {
-    "env": {
-      "BUILDING_FOR_NOW": "true"
-    }
-  }
+  ]
 }
