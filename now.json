@@ -7,6 +7,6 @@
   "redirects": [
     { "source": "/ficdesigner(.*)", "statusCode": 301, "destination": "https://ficdesigner.lensesrequired.com/$1" },
     { "source": "/armybuilder(.*)", "statusCode": 301, "destination": "https://armybuilder.lensesrequired.com/$1" },
-    { "source": "/(.*)", "destination": "/home/$1" }
+    { "source": "(?!/?(home|ficdesigner|armybuilder))(.*)", "destination": "/home/$1" }
   ]
 }
