@@ -4,8 +4,8 @@
   "builds": [
     { "src": "home/next.config.js", "use": "@now/next" }
   ],
-  "routes": [
-    { "src": "/ficdesigner(.*)", "status": 301, "headers": { "Location": "https://ficdesigner.lensesrequired.com/$1" } },
-    { "src": "(?!/?ficdesigner)(.*)", "dest": "/home$1", "continue": true }
+  "redirects": [
+    { "source": "/ficdesigner(.*)", "statusCode": 301, "destination": "https://ficdesigner.lensesrequired.com/$1" },
+    { "source": "/armybuilder(.*)", "statusCode": 301, "destination": "https://armybuilder.lensesrequired.com/$1" }
   ]
 }
