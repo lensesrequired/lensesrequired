@@ -1,18 +1,11 @@
 import React from 'react';
-import dynamic from 'next/dynamic'
-
-const Header = dynamic(import('../components/Header'));
 
 export default () => (
   <div>
-    <Header />
-    <p>An actually cool portfolio website to come...</p>
-    <p>For now... here's some projects:</p>
+    <img src='static/profile_picture.jpg' height={ 500 }/>
     <div>
-      <a href="/armybuilder">ArmyBuilder</a>
-    </div>
-    <div>
-      <a href="/ficdesigner">FicDesigner</a>
+      Email: anna@lensesrequired.com<br/>
+      LinkedIn: <a href={ 'https://www.linkedin.com/in/asmarek/' }>https://www.linkedin.com/in/asmarek/</a>
     </div>
   </div>
 )
