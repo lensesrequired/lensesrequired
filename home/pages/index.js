@@ -29,7 +29,7 @@ export default () => (
             <div>Aug 2019 - Present - Expected Graduation: Dec 2021</div>
           </p>
           <p>
-            <div><strong>Coe College, Cedar Rapids, Iowa — B.A.</strong></div>
+            <div><strong>Coe College, Cedar Rapids, Iowa — Bachelors of Arts</strong></div>
             <div>Double Major: Mathematics and Computer Science</div>
             <div>Aug 2015 - May 2018</div>
             <div>Cumulative GPA: 3.975 - Computer Science GPA: 4.00 - Mathematics GPA: 3.967</div>
@@ -41,30 +41,41 @@ export default () => (
           <h2>Work Experience</h2>
           <p>
             <div><strong>Software Development Engineer, GoDaddy, Hiawatha, IA — Jun 2018-Present</strong></div>
-            <div>Development on GoDaddy internal tools for Domains customer care representatives and developers</div>
+            <ul>
+              <li>Development on GoDaddy internal tools for Domains customer care representatives and developers</li>
+              <li>Development on GoDaddy FOS WhoIs Results page</li>
+              <li>Maintainence and Migration to React/NextJS of Afternic FOS</li>
+            </ul>
           </p>
           <p>
             <div><strong>Internship, GoCanvas, Cedar Rapids, IA — Nov 2013-May 2018</strong></div>
-            <div>Redesign and upkeep of online Help Section</div>
-            <div>Design of mobile app tests</div>
-            <div>Programming of web tests using Selenium in Java</div>
+            <ul>
+              <li>Redesign and upkeep of online Help Section</li>
+              <li>Design of mobile app tests</li>
+              <li>Programming of web tests using Selenium in Java</li>
+            </ul>
           </p>
           <p>
             <div><strong>Department Assistant, Coe College, Cedar Rapids, IA — Aug 2016-May 2018</strong></div>
-            <div>Provide assistance for college level mathematic and computer science courses</div>
+            <ul>
+              <li>Provide assistance for college level mathematic and computer science courses</li>
+            </ul>
           </p>
           <p>
-            <div><strong>Mathematics Research, Coe College, Cedar Rapids, IA — Summer 2016 & Summer 2017</strong>
-            </div>
-            <div>Summer 2016 - Researched and programmed End View puzzle solutions</div>
-            <div>Summer 2017 - Researched compositional operators on the Hardy Space</div>
+            <div><strong>Mathematics Research, Coe College, Cedar Rapids, IA — Summer 2016 & Summer 2017</strong></div>
+            <ul>
+              <li>Summer 2016 - Researched and programmed End View puzzle solutions</li>
+              <li>Summer 2017 - Researched compositional operators on the Hardy Space</li>
+            </ul>
           </p>
           <p>
             <div><strong>Computer Science Research, Coe College, Cedar Rapids, IA — Summer 2016</strong></div>
-            <div>Developed design approach and began implementation of a digital signage solution</div>
-            <div>Implemented using Google Forms, Spreadsheets, and Calendars with Google Apps Script to unify
-              submitted content
-            </div>
+            <ul>
+              <li>Developed design approach and began implementation of a digital signage solution</li>
+              <li>Implemented using Google Forms, Spreadsheets, and Calendars with Google Apps Script to unify
+                submitted content
+              </li>
+            </ul>
           </p>
         </Col>
       </Row>
