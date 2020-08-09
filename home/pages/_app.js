@@ -7,6 +7,8 @@ const Header = dynamic(import('../components/Header'));
 export default ({ Component, pageProps }) => (
   <div style={ { margin: '10px' } }>
     <Header/>
-    <Component { ...pageProps }/>
+    <div style={ { marginTop: '10px' } }>
+      <Component{ ...pageProps }/>
+    </div>
   </div>
 )

@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useRouter } from 'next/router';
 
-export default ({ current }) => {
+export default () => {
   const router = useRouter();
 
   const links = [
@@ -10,8 +10,7 @@ export default ({ current }) => {
     { title: 'Projects', path: '/projects' }
   ];
 
-  return (<Navbar bg="light" expand="sm">
-    <Navbar.Brand href="/">LensesRequired - Anna Marek</Navbar.Brand>
+  return (<Navbar bg="primary" expand="sm">
     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mr-auto">
