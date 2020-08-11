@@ -2,8 +2,8 @@ import React from 'react';
 import { Col, Image, Row } from 'react-bootstrap';
 
 export default ({ name, link, description, git }) => (
-  <Row style={ { height: '200px' } }>
-    <Col style={ { maxWidth: '360px' } }>
+  <Row className='project'>
+    <Col className='image'>
       <Image height={ 200 } width={ 350 } src={ 'static/website_preview.png' }/>
     </Col>
     <Col>

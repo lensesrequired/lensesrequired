@@ -1,18 +1,10 @@
 import React from 'react';
-import { Jumbotron, Container, Row, Col } from 'react-bootstrap';
+import { Jumbotron, Row, Col } from 'react-bootstrap';
 
 export default () => (
   <div>
-    <Jumbotron
-      style={ {
-        height: '300px',
-        display: 'flex',
-        backgroundColor: 'cadetblue',
-        backgroundImage: 'linear-gradient(transparent 50%, white), url("static/profile_picture.jpg")',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'auto 300px'
-      } }>
-      <div style={ { marginLeft: '250px' } }>
+    <Jumbotron id='resume-header'>
+      <div className='content'>
         <h1>Anna Marek</h1>
         <h3>Software Developer</h3>
         <div>Email: anna@lensesrequired.com</div>
@@ -20,7 +12,7 @@ export default () => (
         <div>Skills: ReactJS, Javascript, NextJS/NodeJS, Python, C#/.NET, C++, Git.</div>
       </div>
     </Jumbotron>
-    <div style={ { margin: '0 25px' } }>
+    <div id='resume-content'>
       <Row>
         <Col lg>
           <h2>Education</h2>

@@ -6,9 +6,9 @@ import '../styles/index.css';
 const Header = dynamic(import('../components/Header'));
 
 export default ({ Component, pageProps }) => (
-  <div style={ { margin: '10px' } }>
+  <div>
     <Header/>
-    <div style={ { marginTop: '10px' } }>
+    <div className='content'>
       <Component{ ...pageProps }/>
     </div>
   </div>

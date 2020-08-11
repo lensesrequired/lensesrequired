@@ -10,10 +10,10 @@ export default () => {
     { title: 'Projects', path: '/projects' }
   ];
 
-  return (<Navbar bg="primary" expand="sm">
-    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-    <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="mr-auto">
+  return (<Navbar expand='sm' sticky='top' id='nav-header'>
+    <Navbar.Toggle aria-controls='basic-navbar-nav'/>
+    <Navbar.Collapse id='basic-navbar-nav'>
+      <Nav className='mr-auto'>
         {
           links.map(({ title, path }) => (
             <Nav.Link href={ path } active={ router.pathname === path }>{ title }</Nav.Link>

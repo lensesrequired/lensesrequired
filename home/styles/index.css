@@ -1,10 +1,34 @@
-iframe {
-    width: 1108px;
-    height: 710px;
-    -webkit-transform: scale(0.25);
-    -moz-transform: scale(0.25);
-    -o-transform: scale(0.25);
-    transform: scale(0.25);
-    position: absolute;
-    pointer-events: none;
+#nav-header {
+    border: 10px white solid;
+    border-radius: 14px;
+    background-color: cadetblue;
+}
+
+.content {
+    margin: 0 10px;
+}
+
+#resume-header {
+    height: 300px;
+    display: flex;
+    background-color: cadetblue;
+    background-image: linear-gradient(transparent 50%, white) /*, url('../static/profile_picture.jpg')*/;
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+}
+
+#resume-header .content {
+    margin-left: 250px;
+}
+
+#resume-content {
+    margin: 0 25px;
+}
+
+.project {
+    height: 200px;
+}
+
+.project .image {
+    max-width: 360px;
 }
