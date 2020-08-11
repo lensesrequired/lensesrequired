@@ -1,5 +1,4 @@
 import React from 'react';
-import { Image, Row, Col } from 'react-bootstrap';
 import Project from '../components/Project';
 
 export default () => {
@@ -26,9 +25,9 @@ export default () => {
   ];
 
   return (<div>
-    <p>For now... here's just links to some projects:</p>
+    <h2>Projects</h2>
     {
-      projects.map((data, index) => (
+      projects.map((data) => (
         <Project { ...data }/>
       ))
     }
