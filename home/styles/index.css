@@ -40,6 +40,7 @@ body {
 
 .project {
     height: 200px;
+    margin-bottom: 10px;
 }
 
 .project .image {
