@@ -1,6 +1,6 @@
 import React from 'react';
 import { Jumbotron, Row, Col, Badge } from 'react-bootstrap';
-import { AiOutlineMail, AiFillLinkedin } from 'react-icons/ai';
+import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
 
 export default () => (
   <div>
@@ -16,6 +16,9 @@ export default () => (
           </Badge>
           <Badge variant='light'>
             <a href={ 'https://www.linkedin.com/in/asmarek' }><AiFillLinkedin size={ '1.25em' }/> LinkedIn</a>
+          </Badge>
+          <Badge variant='light'>
+            <a href={ 'https://www.github.com/lensesrequired' }><AiFillGithub size={ '1.25em' }/> GitHub</a>
           </Badge>
         </h6>
         <div>Skills: ReactJS, Javascript, NextJS/NodeJS, Python, C#/.NET, C++, Git.</div>

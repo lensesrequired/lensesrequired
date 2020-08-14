@@ -10,7 +10,7 @@ export default ({ name, link, description, git }) => (
     <Col>
       <a href={ link }>{ name }</a>
       <Badge variant='light'>
-        <a href={ git }><AiFillGithub size={ '1.25em' }/> Git</a>
+        <a href={ git }><AiFillGithub size={ '1.25em' }/> GitHub</a>
       </Badge>
       <p>{ description }</p>
     </Col>
