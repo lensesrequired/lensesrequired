@@ -1,5 +1,6 @@
 import React from 'react';
-import { Jumbotron, Row, Col } from 'react-bootstrap';
+import { Jumbotron, Row, Col, Badge } from 'react-bootstrap';
+import { AiOutlineMail, AiFillLinkedin } from 'react-icons/ai';
 
 export default () => (
   <div>
@@ -7,8 +8,16 @@ export default () => (
       <div className='content'>
         <h1>Anna Marek</h1>
         <h3>Software Developer</h3>
-        <div>Email: anna@lensesrequired.com</div>
-        <div>LinkedIn: <a href={ 'https://www.linkedin.com/in/asmarek/' }>https://www.linkedin.com/in/asmarek/</a></div>
+        <h6>
+          <Badge variant='light'>
+            <a href={ 'mailto:anna@lensesrequired.com' }>
+              <AiOutlineMail size={ '1.25em' }/> Email: anna@lensesrequired.com
+            </a>
+          </Badge>
+          <Badge variant='light'>
+            <a href={ 'https://www.linkedin.com/in/asmarek' }><AiFillLinkedin size={ '1.25em' }/> LinkedIn</a>
+          </Badge>
+        </h6>
         <div>Skills: ReactJS, Javascript, NextJS/NodeJS, Python, C#/.NET, C++, Git.</div>
       </div>
     </Jumbotron>

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Col, Image, Row } from 'react-bootstrap';
+import { Col, Image, Row, Badge } from 'react-bootstrap';
+import { AiFillGithub } from 'react-icons/ai';
 
 export default ({ name, link, description, git }) => (
   <Row className='project'>
@@ -8,7 +9,9 @@ export default ({ name, link, description, git }) => (
     </Col>
     <Col>
       <a href={ link }>{ name }</a>
-      <a href={ git }><Image src='static/zeit.png' height={ 20 }/></a>
+      <Badge variant='light'>
+        <a href={ git }><AiFillGithub size={ '1.25em' }/> Git</a>
+      </Badge>
       <p>{ description }</p>
     </Col>
   </Row>

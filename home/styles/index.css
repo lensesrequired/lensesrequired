@@ -1,7 +1,12 @@
+body {
+    background: black;
+    color: white;
+}
+
 #nav-header {
-    border: 10px white solid;
+    border: 10px black solid;
     border-radius: 14px;
-    background-color: cadetblue;
+    background-color: #009bcf;
 }
 
 .content {
@@ -11,8 +16,8 @@
 #resume-header {
     height: 300px;
     display: flex;
-    background-color: cadetblue;
-    background-image: linear-gradient(transparent 50%, white) /*, url('../static/profile_picture.jpg')*/;
+    background-color: #009bcf;
+    background-image: linear-gradient(transparent 50%, black), url('/static/profile_picture.jpg');
     background-repeat: no-repeat;
     background-size: auto 300px;
 }
@@ -31,4 +36,18 @@
 
 .project .image {
     max-width: 360px;
+}
+
+.badge {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+}
+
+.badge a {
+    color: white
+}
+
+.badge.badge-light a {
+    color: black
 }
