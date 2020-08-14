@@ -9,6 +9,14 @@ body {
     background-color: #009bcf;
 }
 
+#nav-header .nav-link {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#nav-header .nav-link.active {
+    color: white;
+}
+
 .content {
     margin: 0 10px;
 }
