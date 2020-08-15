@@ -2,10 +2,10 @@ import React from 'react';
 import { Col, Image, Row, Badge } from 'react-bootstrap';
 import { AiFillGithub } from 'react-icons/ai';
 
-export default ({ name, link, description, git, image }) => (
+export default ({ name, link, description, git, src }) => (
   <Row className='project'>
     <Col className='image'>
-      <Image height={ 200 } width={ 350 } src={ image || 'static/website_preview.png' }/>
+      <iframe src={ src } height={ 200 } width={ 350 }/>
     </Col>
     <Col>
       <a href={ link }>{ name }</a>

@@ -3,6 +3,19 @@ body {
     color: white;
 }
 
+iframe {
+    width: 1000px;
+    height: 720px;
+    border: 1px solid black;
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.35);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.35);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.35);
+    -webkit-transform-origin: 0 0;
+}
+
 #nav-header {
     border: 10px black solid;
     border-radius: 14px;
@@ -39,7 +52,7 @@ body {
 }
 
 .project {
-    height: 200px;
+    height: 250px;
     margin-bottom: 10px;
 }
 

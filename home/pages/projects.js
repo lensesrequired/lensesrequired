@@ -30,26 +30,6 @@ export class ProjectsPage extends Component {
     };
   }
 
-  async componentDidMount() {
-    const { projects } = this.state;
-    const metadata = await Promise.all(projects.map(({ src }) => (
-      axios.get(`${ src }`)
-        .catch((err) => {
-          console.log(err);
-          return {};
-        })
-    )));
-    console.log(metadata);
-    this.setState({
-      projects: projects.map((project, index) => {
-        return {
-          ...project,
-          image: metadata[index].data.image || ''
-        };
-      })
-    });
-  }
-
   render() {
     const { projects } = this.state;
 
