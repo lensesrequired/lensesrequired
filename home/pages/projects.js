@@ -11,20 +11,20 @@ export class ProjectsPage extends Component {
           name: 'ArmyBuilder',
           link: '/armybuilder',
           src: 'https://armybuilder.lensesrequired.com',
-          git: 'https://armybuilder.lensesrequired.com',
+          git: 'https://github.com/lensesrequired/armybuilder',
           description: 'An app that allows you to build armies from the WarHammer 40k indexes'
         }, {
           name: 'FicDesigner',
           link: '/ficdesigner',
           src: 'https://ficdesigner.lensesrequired.com',
-          git: 'https://ficdesigner.lensesrequired.com',
-          description: ''
+          git: 'https://github.com/lensesrequired/ficdesigner',
+          description: 'An app for tracking writing projects'
         }, {
           name: 'Deck Building Game',
           link: '/deckbuilder',
           src: 'https://deckbuilder.lensesrequired.com',
-          git: 'https://deckbuilder.lensesrequired.com',
-          description: ''
+          git: 'https://github.com/lensesrequired/deck-builder-ui',
+          description: 'An app for creating and playing custom deck building cards and games'
         }
       ]
     };
