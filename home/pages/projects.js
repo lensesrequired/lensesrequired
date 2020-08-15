@@ -33,11 +33,13 @@ export class ProjectsPage extends Component {
   async componentDidMount() {
     const { projects } = this.state;
     const metadata = await Promise.all(projects.map(({ src }) => (
-      axios.get(`http://api.linkpreview.net/?key=REPLACE_KEY&q=${ src }`).catch((err) => {
-        console.log(err);
-        return {};
-      })
+      axios.get(`${ src }`)
+        .catch((err) => {
+          console.log(err);
+          return {};
+        })
     )));
+    console.log(metadata);
     this.setState({
       projects: projects.map((project, index) => {
         return {
