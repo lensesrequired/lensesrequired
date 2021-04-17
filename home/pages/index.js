@@ -7,7 +7,7 @@ export default () => (
     <Jumbotron id='resume-header'>
       <div className='content'>
         <h1>Anna Marek</h1>
-        <h3>Software Developer</h3>
+        <h3>Senior Software Developer</h3>
         <h6>
           <Badge variant='light'>
             <a href={ 'mailto:anna@lensesrequired.com' }>
@@ -29,7 +29,7 @@ export default () => (
         <Col lg>
           <h2>Education</h2>
           <p>
-            <div><strong>Iowa State University, Ame, Iowa - Masters of Human Computer Interaction</strong></div>
+            <div><strong>Iowa State University, Ames, Iowa - Masters' of Human Computer Interaction</strong></div>
             <div>Aug 2019 - Present - Expected Graduation: Dec 2021</div>
           </p>
           <p>
@@ -44,11 +44,11 @@ export default () => (
         <Col lg>
           <h2>Work Experience</h2>
           <p>
-            <div><strong>Software Development Engineer, GoDaddy, Hiawatha, IA — Jun 2018-Present</strong></div>
+            <div><strong>Senior Software Development Engineer, GoDaddy, Hiawatha, IA — Jun 2018-Present</strong></div>
             <ul>
               <li>Development on GoDaddy internal tools for Domains customer care representatives and developers</li>
               <li>Development on GoDaddy FOS WhoIs Results page</li>
-              <li>Maintainence and Migration to React/NextJS of Afternic FOS</li>
+              <li>Maintenance, Migration, and Update to React/NextJS of Afternic FOS (from PHP)</li>
             </ul>
           </p>
           <p>
