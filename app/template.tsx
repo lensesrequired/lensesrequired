@@ -1,6 +1,7 @@
-"use client";
-import Header from '@/components/Header'
-import {ReactNode} from "react";
+'use client';
+
+import Header from '@/components/Header';
+import { ReactNode } from 'react';
 
 export default function Template({
   children,
@@ -8,8 +9,8 @@ export default function Template({
   children: ReactNode;
 }>) {
   return (
-    <div className='content'>
-      <Header/>
+    <div className="content">
+      <Header />
       {children}
     </div>
   );

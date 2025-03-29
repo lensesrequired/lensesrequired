@@ -1,61 +1,100 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { Row, Col, Badge } from 'react-bootstrap';
-import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
+import { Badge, Col, Row } from 'react-bootstrap';
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
     <div className={styles.page}>
       <main className={styles.main}>
-        <div id='resume-header'>
-          <div className='content'>
+        <div id="resume-header">
+          <div className="content">
             <h1>Anna Marek-Loew</h1>
             <h3>Principle Software Developer</h3>
             <h6>
-              <Badge variant='light'>
-                <a href={ 'mailto:anna@lensesrequired.com' }>
-                  <AiOutlineMail size={ '1.25em' }/> Email: anna@marekloew.com
+              <Badge variant="light">
+                <a href={'mailto:anna@lensesrequired.com'}>
+                  <AiOutlineMail size={'1.25em'} /> Email: anna@marekloew.com
                 </a>
               </Badge>
-              <Badge variant='light'>
-                <a href={ 'https://www.linkedin.com/in/asmarek' }><AiFillLinkedin size={ '1.25em' }/> LinkedIn</a>
+              <Badge variant="light">
+                <a href={'https://www.linkedin.com/in/asmarek'}>
+                  <AiFillLinkedin size={'1.25em'} /> LinkedIn
+                </a>
               </Badge>
-              <Badge variant='light'>
-                <a href={ 'https://www.github.com/lensesrequired' }><AiFillGithub size={ '1.25em' }/> GitHub</a>
+              <Badge variant="light">
+                <a href={'https://www.github.com/lensesrequired'}>
+                  <AiFillGithub size={'1.25em'} /> GitHub
+                </a>
               </Badge>
             </h6>
-            <div>Skills: ReactJS, Javascript/Typescript, AWS, NextJS/NodeJS, Python, Git.</div>
+            <div>
+              Skills: ReactJS, Javascript/Typescript, AWS, NextJS/NodeJS,
+              Python, Git.
+            </div>
           </div>
         </div>
-        <div id='resume-content'>
+        <div id="resume-content">
           <Row>
             <Col lg>
               <h2>Education</h2>
               <p>
-                <div><strong>Iowa State University, Ames, Iowa - Masters' of Human Computer Interaction</strong></div>
+                <div>
+                  <strong>
+                    Iowa State University, Ames, Iowa - Masters' of Human
+                    Computer Interaction
+                  </strong>
+                </div>
                 <div>Aug 2019 - Present - Expected Graduation: Dec 2021</div>
               </p>
               <p>
-                <div><strong>Coe College, Cedar Rapids, Iowa — Bachelors of Arts</strong></div>
+                <div>
+                  <strong>
+                    Coe College, Cedar Rapids, Iowa — Bachelors of Arts
+                  </strong>
+                </div>
                 <div>Double Major: Mathematics and Computer Science</div>
                 <div>Aug 2015 - May 2018</div>
-                <div>Cumulative GPA: 3.975 - Computer Science GPA: 4.00 - Mathematics GPA: 3.967</div>
-                <div>Honors: Phi Beta Kappa Honor Society, Phi Kappa Phi Honor Society, Dean's List</div>
-                <div>Activities: Computer Science Club (President), Math Club (Vice President)</div>
+                <div>
+                  Cumulative GPA: 3.975 - Computer Science GPA: 4.00 -
+                  Mathematics GPA: 3.967
+                </div>
+                <div>
+                  Honors: Phi Beta Kappa Honor Society, Phi Kappa Phi Honor
+                  Society, Dean's List
+                </div>
+                <div>
+                  Activities: Computer Science Club (President), Math Club (Vice
+                  President)
+                </div>
               </p>
             </Col>
             <Col lg>
               <h2>Work Experience</h2>
               <p>
-                <div><strong>Senior Software Development Engineer, GoDaddy, Hiawatha, IA — Jun 2018-Present</strong></div>
+                <div>
+                  <strong>
+                    Senior Software Development Engineer, GoDaddy, Hiawatha, IA
+                    — Jun 2018-Present
+                  </strong>
+                </div>
                 <ul>
-                  <li>Development on GoDaddy internal tools for Domains customer care representatives and developers</li>
+                  <li>
+                    Development on GoDaddy internal tools for Domains customer
+                    care representatives and developers
+                  </li>
                   <li>Development on GoDaddy FOS WhoIs Results page</li>
-                  <li>Maintenance, Migration, and Update to React/NextJS of Afternic FOS (from PHP)</li>
+                  <li>
+                    Maintenance, Migration, and Update to React/NextJS of
+                    Afternic FOS (from PHP)
+                  </li>
                 </ul>
               </p>
               <p>
-                <span><strong>Internship, GoCanvas, Cedar Rapids, IA — Nov 2013-May 2018</strong></span>
+                <span>
+                  <strong>
+                    Internship, GoCanvas, Cedar Rapids, IA — Nov 2013-May 2018
+                  </strong>
+                </span>
                 <ul>
                   <li>Redesign and upkeep of online Help Section</li>
                   <li>Design of mobile app tests</li>
@@ -63,24 +102,52 @@ export default function Home() {
                 </ul>
               </p>
               <p>
-                <span><strong>Department Assistant, Coe College, Cedar Rapids, IA — Aug 2016-May 2018</strong></span>
+                <span>
+                  <strong>
+                    Department Assistant, Coe College, Cedar Rapids, IA — Aug
+                    2016-May 2018
+                  </strong>
+                </span>
                 <ul>
-                  <li>Provide assistance for college level mathematic and computer science courses</li>
+                  <li>
+                    Provide assistance for college level mathematic and computer
+                    science courses
+                  </li>
                 </ul>
               </p>
               <p>
-                <span><strong>Mathematics Research, Coe College, Cedar Rapids, IA — Summer 2016 & Summer 2017</strong></span>
+                <span>
+                  <strong>
+                    Mathematics Research, Coe College, Cedar Rapids, IA — Summer
+                    2016 & Summer 2017
+                  </strong>
+                </span>
                 <ul>
-                  <li>Summer 2016 - Researched and programmed End View puzzle solutions</li>
-                  <li>Summer 2017 - Researched compositional operators on the Hardy Space</li>
+                  <li>
+                    Summer 2016 - Researched and programmed End View puzzle
+                    solutions
+                  </li>
+                  <li>
+                    Summer 2017 - Researched compositional operators on the
+                    Hardy Space
+                  </li>
                 </ul>
               </p>
               <p>
-                <div><strong>Computer Science Research, Coe College, Cedar Rapids, IA — Summer 2016</strong></div>
+                <div>
+                  <strong>
+                    Computer Science Research, Coe College, Cedar Rapids, IA —
+                    Summer 2016
+                  </strong>
+                </div>
                 <ul>
-                  <li>Developed design approach and began implementation of a digital signage solution</li>
-                  <li>Implemented using Google Forms, Spreadsheets, and Calendars with Google Apps Script to unify
-                    submitted content
+                  <li>
+                    Developed design approach and began implementation of a
+                    digital signage solution
+                  </li>
+                  <li>
+                    Implemented using Google Forms, Spreadsheets, and Calendars
+                    with Google Apps Script to unify submitted content
                   </li>
                 </ul>
               </p>

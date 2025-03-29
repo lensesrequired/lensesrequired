@@ -167,8 +167,6 @@ a.secondary {
   }
 }
 
-
-
 #nav-header {
   border: 10px black solid;
   border-radius: 14px;
@@ -191,7 +189,8 @@ a.secondary {
   height: 300px;
   display: flex;
   background-color: #009bcf;
-  background-image: linear-gradient(transparent 50%, black), url('/static/profile_picture.jpg');
+  background-image:
+    linear-gradient(transparent 50%, black), url('/static/profile_picture.jpg');
   background-repeat: no-repeat;
   background-size: auto 300px;
 }
@@ -221,10 +220,9 @@ a.secondary {
 }
 
 .badge a {
-  color: white
+  color: white;
 }
 
 .badge.badge-light a {
-  color: black
+  color: black;
 }
-
