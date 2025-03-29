@@ -1,5 +1,5 @@
 import React from 'react';
-import { Badge, Col, Image, Row } from 'react-bootstrap';
+import { Badge, Col, Row } from 'react-bootstrap';
 import { AiFillGithub } from 'react-icons/ai';
 
 export default ({ name, link, description, git, src }) => (
