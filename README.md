@@ -1,62 +1,36 @@
-# Using multiple zones
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Deploy your own
+## Getting Started
 
-Deploy the example using [ZEIT Now](https://zeit.co/now):
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-zones)
-
-## How to use
-
-### Using `create-next-app`
-
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+First, run the development server:
 
 ```bash
-npx create-next-app --example with-zones with-zones-app
+npm run dev
 # or
-yarn create next-app --example with-zones with-zones-app
-```
-
-### Download manually
-
-Download the example:
-
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-zones
-cd with-zones
-```
-
-## The idea behind this example
-
-With Next.js you can use multiple apps as a single app using it's [multi-zones feature](https://nextjs.org/docs#multi-zones). This is an example showing how to use it.
-
-In this example, we have two apps: 'home' and 'blog'. We'll start both apps with [Now](https://zeit.co/now):
-
-```bash
-now dev
-```
-
-Then, you can visit <http://localhost:3000> and develop for both apps as a single app.
-
-You can also start the apps separately, for example:
-
-```bash
-cd blog
 yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## Special Notes
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- All pages should be unique across zones. For example, the 'home' app should not have a `pages/blog/index.js` page.
-- The 'blog' app sets `assetPrefix` so that generated JS bundles are within the `/blog` subfolder.
-  - To also support the plain `next dev` scenario, `assetPrefix` is set dynamically based on the `BUILDING_FOR_NOW` environment variable, see [`now.json`](now.json) and [`blog/next.config.js`](blog/next.config.js).
-  - Images and other `/static` assets have to be prefixed manually, e.g., `` <img src={`${process.env.ASSET_PREFIX}/static/image.png`} /> ``, see [`blog/pages/blog/index.js`](blog/pages/blog/index.js).
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Production Deployment
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-We only need to run `now`, the same `now.json` used for development will be used for the deployment:
+## Learn More
 
-```bash
-now
-```
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
