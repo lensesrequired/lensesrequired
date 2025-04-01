@@ -1,0 +1,41 @@
+#resume-header {
+  height: 300px;
+  display: flex;
+  background-color: #009bcf;
+  background-image:
+    linear-gradient(transparent 50%, black), url('/public/profile_picture.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 300px;
+}
+
+#resume-header .content {
+  margin-left: 250px;
+}
+
+#resume-content {
+  margin: 0 25px;
+}
+
+.project {
+  height: 250px;
+  margin-bottom: 10px;
+}
+
+.project .image {
+  max-height: 280px;
+  max-width: 360px;
+}
+
+.badge {
+  position: relative;
+  top: -2px;
+  margin-left: 5px;
+}
+
+.badge a {
+  color: white;
+}
+
+.badge.badge-light a {
+  color: black;
+}
