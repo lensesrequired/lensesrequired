@@ -1,6 +1,6 @@
 import { Badge, Col, Image, Row } from 'react-bootstrap';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import './page.module.scss';
+import styles from './page.module.scss';
 
 export default function Home() {
   const badges = [
@@ -22,15 +22,14 @@ export default function Home() {
   ];
 
   return (
-    <div className="my-5">
+    <div className="resume mx-4 mb-5">
       <main>
         <Row>
-          <Col md={4} className="px-2 text-center">
+          <Col md={4} className="text-center">
             <Image
-              className="mb-3"
+              className="profile-picture mb-3"
               src="profile_picture.jpg"
               roundedCircle
-              width="80%"
             />
             <h2>Anna Marek-Loew</h2>
             <h4>Principle Software Developer</h4>
