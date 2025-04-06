@@ -1,6 +1,5 @@
 import { Badge, Col, Image, Row } from 'react-bootstrap';
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from 'react-icons/ai';
-import styles from './page.module.scss';
 
 export default function Home() {
   const badges = [
