@@ -26,23 +26,26 @@ export default function Home() {
       <main>
         <Row>
           <Col md={4} className="text-center">
-            <Image
-              className="profile-picture mb-3"
-              src="profile_picture.jpg"
-              roundedCircle
-            />
-            <h2>Anna Marek-Loew</h2>
-            <h4>Principle Software Developer</h4>
-            <h4>Team Tech Lead</h4>
-            <h6>
-              {badges.map(({ Icon, link, text }) => (
-                <Badge bg="light" text="dark" className="m-1" key={text}>
-                  <a href={link}>
-                    <Icon size={'1.25em'} /> {text}
-                  </a>
-                </Badge>
-              ))}
-            </h6>
+            <div className="sidebar mb-5">
+              <Image
+                className="profile-picture mb-3"
+                src="profile_picture.jpg"
+                roundedCircle
+              />
+              <h2>Anna Marek-Loew</h2>
+              <h4>Full-Stack Software Developer</h4>
+              <h4>Team Tech Lead</h4>
+              <h6>Denver, CO</h6>
+              <div>
+                {badges.map(({ Icon, link, text }) => (
+                  <Badge bg="light" text="dark" className="m-1" key={text}>
+                    <a href={link}>
+                      <Icon size={'1.25em'} /> {text}
+                    </a>
+                  </Badge>
+                ))}
+              </div>
+            </div>
           </Col>
           <Col md={8}>
             <Row>

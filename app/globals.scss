@@ -65,4 +65,9 @@ iframe {
   .profile-picture {
     width: 70%;
   }
+
+  .sidebar {
+    position: fixed;
+    width: calc(33.33% - calc(var(--bs-gutter-x)));
+  }
 }

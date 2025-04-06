@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Josefin_Sans } from 'next/font/google';
+import { Josefin_Sans } from 'next/font/google';
 import { ReactNode } from 'react';
 import './globals.scss';
 
