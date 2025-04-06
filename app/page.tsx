@@ -47,60 +47,113 @@ export default function Home() {
               </div>
             </div>
           </Col>
-          <Col md={8}>
+          <Col md={8} className="resume-content">
             <Row>
-              <h2>Work Experience</h2>
+              <p>
+                Hi! I’m a <strong>Full-Stack Software Developer</strong> with 7
+                years of experience in designing, developing, and maintaining
+                web applications across the entire development lifecycle.
+                Proficient in both front-end and back-end technologies and
+                principles, specializing in <strong>React/Redux</strong>&nbsp;
+                and&nbsp;
+                <strong>NodeJS/NextJS/Express</strong>, as well as DevOps for
+                deploying scalable <strong>cloud services using AWS</strong>.
+                Adept at leading a technical team in agile environments and
+                collaborating with product, design, and business to deliver
+                high-quality software solutions on time. Strong problem-solving
+                skills with a passion for creating&nbsp;
+                <strong>customer-focused features and workflows</strong> by
+                writing clean, efficient code and continuously improving
+                development processes.
+              </p>
+              <h2>Experience</h2>
               <div>
                 <span>
-                  <strong>
-                    Senior Software Development Engineer, GoDaddy, Hiawatha, IA
-                    — Jun 2018-Present
-                  </strong>
+                  <strong>Software Development Engineer V</strong>
+                  <br />
+                  GoDaddy • June 2018 - Present
                 </span>
                 <ul>
-                  <li>
-                    Development on GoDaddy internal tools for Domains customer
-                    care representatives and developers
-                  </li>
-                  <li>Development on GoDaddy FOS WhoIs Results page</li>
-                  <li>
-                    Maintenance, Migration, and Update to React/NextJS of
-                    Afternic FOS (from PHP)
-                  </li>
+                  <li>Current Role</li>
+                  <ul>
+                    <li>
+                      Tech Lead & Full-Stack Developer for Afternic.com & Domain
+                      Academy Tools
+                    </li>
+                    <ul>
+                      <li>
+                        Architecture creation & maintenance using AWS CDK, ECS,
+                        ECR, DynamoDB, & more
+                      </li>
+                      <li>
+                        Maintenance of NextJS/React & Express applications
+                      </li>
+                      <li>
+                        SME on integrations with Authentication platform for
+                        login, federation, and oauth flows
+                      </li>
+                      <li>
+                        Oversee & contribute to UX Design feasibility, ideation,
+                        and experimentation efforts
+                      </li>
+                    </ul>
+                    <li>
+                      Lead Developer over Domain Investors Experience Org's
+                      React common components and GitHub Action libraries
+                    </li>
+                    <li>Contributor to GoDaddy’s internal AWS Guild</li>
+                  </ul>
+                  <li>Past Roles</li>
+                  <ul>
+                    <li>Full-Stack Developer for Afternic.com</li>
+                    <ul>
+                      <li>
+                        Upkeep and eventual retirement of legacy PHP codebase
+                      </li>
+                      <li>
+                        Migration and implementation of new designs to
+                        NextJS/React
+                      </li>
+                      <li>
+                        Migration into AWS from internally hosted Kubernetes
+                      </li>
+                      <li>
+                        Migration from AWS deployments using Sceptre to AWS
+                        deployments using CDK
+                      </li>
+                    </ul>
+                    <li>
+                      Lead Developer over the acquisition and migration of
+                      Domain Academy Tools into AWS/NextJS/Express/React
+                    </li>
+                    <li>
+                      Rewrite of GoDaddy's WhoIs results page from C# to
+                      NextJS/React
+                    </li>
+                    <li>
+                      Development of internal tools for customer care
+                      representatives and developers
+                    </li>
+                  </ul>
                 </ul>
               </div>
               <div>
                 <span>
-                  <strong>
-                    Internship, GoCanvas, Cedar Rapids, IA — Nov 2013-May 2018
-                  </strong>
+                  <strong>Technical Intern</strong>
+                  <br />
+                  GoCanvas • November 2013 - May 2018
                 </span>
                 <ul>
                   <li>Redesign and upkeep of online Help Section</li>
                   <li>Design of mobile app tests</li>
-                  <li>Programming of web tests using Selenium in Java</li>
+                  <li>Implementation of web tests using Selenium in Java</li>
                 </ul>
               </div>
               <div>
                 <span>
-                  <strong>
-                    Department Assistant, Coe College, Cedar Rapids, IA — Aug
-                    2016-May 2018
-                  </strong>
-                </span>
-                <ul>
-                  <li>
-                    Provide assistance for college level mathematic and computer
-                    science courses
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <span>
-                  <strong>
-                    Mathematics Research, Coe College, Cedar Rapids, IA — Summer
-                    2016 & Summer 2017
-                  </strong>
+                  <strong>Mathematics Researcher</strong>
+                  <br />
+                  Coe College • Summer 2016 & Summer 2017
                 </span>
                 <ul>
                   <li>
@@ -109,16 +162,18 @@ export default function Home() {
                   </li>
                   <li>
                     Summer 2017 - Researched compositional operators on the
-                    Hardy Space
+                    Hardy Space{' '}
+                    <a href="https://scholar.rose-hulman.edu/rhumj/vol21/iss1/1/">
+                      Publication
+                    </a>
                   </li>
                 </ul>
               </div>
               <div>
                 <span>
-                  <strong>
-                    Computer Science Research, Coe College, Cedar Rapids, IA —
-                    Summer 2016
-                  </strong>
+                  <strong>Computer Science Researcher</strong>
+                  <br />
+                  Coe College • Summer 2016
                 </span>
                 <ul>
                   <li>
