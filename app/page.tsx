@@ -61,8 +61,10 @@ export default function Home() {
                 collaborating with product, design, and business to deliver
                 high-quality software solutions on time. Strong problem-solving
                 skills with a passion for creating&nbsp;
-                <strong>customer-focused features and workflows</strong> by
-                writing clean, efficient code and continuously improving
+                <strong>
+                  customer-focused features and workflows, including AI agents
+                </strong>{' '}
+                by writing clean, efficient code and continuously improving
                 development processes.
               </p>
               <h2>Experience</h2>
@@ -86,6 +88,10 @@ export default function Home() {
                       </li>
                       <li>
                         Maintenance of NextJS/React & Express applications
+                      </li>
+                      <li>
+                        Adoption, creation, and securing of AI tools and
+                        workflows for developers and customers
                       </li>
                       <li>
                         SME on integrations with Authentication platform for
