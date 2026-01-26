@@ -1,7 +1,7 @@
 import { ClassAttributes, ComponentType, ImgHTMLAttributes } from 'react';
 import { ExtraProps } from 'react-markdown';
 
-const ABOUT_ME_CONTENT = `# 👋 Hi! I'm Anna Marek
+const ABOUT_ME_CONTENT = `# 👋 Hi! I'm Anna Marek-Loew
 
 ![Profile Picture](/profile_picture.jpg)
 
