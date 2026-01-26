@@ -21,6 +21,25 @@ export default function Home() {
   const currentContent = SECTIONS_CONFIG[tab].content;
 
   useEffect(() => {
+    // Handle initial hash on mount
+    const hash = window.location.hash.slice(1);
+    if (hash && Object.values(SECTIONS).includes(hash as SECTIONS)) {
+      setTab(hash as SECTIONS);
+    }
+
+    // Listen for hash changes
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1);
+      if (hash && Object.values(SECTIONS).includes(hash as SECTIONS)) {
+        setTab(hash as SECTIONS);
+      }
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  useEffect(() => {
     if ((breakpoint === 'sm' || breakpoint === 'md') && view === VIEW.SPLIT) {
       setView(VIEW.PREVIEW);
     }
@@ -46,7 +65,10 @@ export default function Home() {
               'bg-gray-900 border-b border-violet-700': tab === section,
               'text-gray-300': tab !== section,
             })}
-            onClick={() => setTab(section)}
+            onClick={() => {
+              window.location.hash = section;
+              setTab(section);
+            }}
           >
             {SECTIONS_CONFIG[section].fileName}
           </div>

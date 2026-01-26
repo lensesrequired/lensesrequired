@@ -1,4 +1,5 @@
 import { SECTIONS, SECTIONS_CONFIG } from '@/constants/content';
+import classNames from 'classnames';
 import type { Metadata } from 'next';
 import { Josefin_Sans, Source_Code_Pro } from 'next/font/google';
 import { ReactNode } from 'react';
@@ -30,17 +31,17 @@ export default function RootLayout({
     {
       Icon: AiOutlineMail,
       link: 'mailto:anna@marekloew.com',
-      color: 'green',
+      color: 'text-green-400',
     },
     {
       Icon: AiFillLinkedin,
       link: 'https://www.linkedin.com/in/asmarek',
-      color: 'blue',
+      color: 'text-blue-400',
     },
     {
       Icon: AiFillGithub,
       link: 'https://www.github.com/lensesrequired',
-      color: 'purple',
+      color: 'text-purple-400',
     },
   ];
 
@@ -66,7 +67,10 @@ export default function RootLayout({
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-${color}-400 p-1 rounded-md hover:bg-gray-800`}
+                    className={classNames(
+                      'p-1 rounded-md hover:bg-gray-800',
+                      color,
+                    )}
                   >
                     <Icon size={18} />
                   </a>
@@ -86,11 +90,14 @@ export default function RootLayout({
                     <AiFillFolderOpen /> src
                   </li>
                   {Object.values(SECTIONS).map((section) => (
-                    <li
-                      key={section}
-                      className="flex items-center gap-2 ml-4 text-gray-200"
-                    >
-                      <AiFillFileMarkdown /> {SECTIONS_CONFIG[section].fileName}
+                    <li key={section} className="flex items-center gap-2 ml-4">
+                      <AiFillFileMarkdown />
+                      <a
+                        href={`#${section}`}
+                        className="text-gray-200 hover:text-violet-400 transition-colors"
+                      >
+                        {SECTIONS_CONFIG[section].fileName}
+                      </a>
                     </li>
                   ))}
                 </ul>
