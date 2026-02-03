@@ -8,7 +8,7 @@ const ABOUT_ME_CONTENT = `# 👋 Hi! I'm Anna Marek-Loew
 **Full-Stack Software Developer** with 7 years of experience designing, developing, and maintaining web applications across the entire development lifecycle.
 
 
-&nbsp; Proficient in **front-end & back-end technologies**, specializing in **React/Redux**, **NodeJS/NextJS/Express**, and **cloud services using AWS**. Adept at leading technical teams in agile environments and collaborating with product, design, and business to deliver high-quality software solutions on time.
+&nbsp; Proficient in **front-end & back-end technologies**, specializing in **React/Redux**, **NodeJS\nextJS/Express**, and **cloud services using AWS**. Adept at leading technical teams in agile environments and collaborating with product, design, and business to deliver high-quality software solutions on time.
 
 
 &nbsp; Passionate about creating **customer-focused features and workflows**, including **AI agents**, by writing clean, efficient code and continuously improving development processes.`;
@@ -37,7 +37,7 @@ const WORK_EXPERIENCE_CONTENT = `# 💼 Work Experience
 - Migrated new designs to **NextJS/React**
 - Led migration into AWS from internally hosted Kubernetes
 - Transitioned deployments from **Sceptre to CDK**
-- Led acquisition and migration of **Domain Academy Tools** into AWS/NextJS/Express/React
+- Led acquisition and migration of **Domain Academy Tools** into AWS\nextJS/Express/React
 - Rewrote **WhoIs results page** from C# to NextJS/React
 - Developed **internal tools** for customer care representatives and developers
 
@@ -89,7 +89,31 @@ export enum SECTIONS {
 const PROJECTS_CONTENT = `# 🚀 Projects
 
 
-Coming soon...`;
+## CineMates
+
+<WebsiteInfo>cinemates</WebsiteInfo>
+
+
+A movie social platform where users can share watchlists, collaborate on movie picks, and discover films together.
+
+#### **Frameworks & Technologies** 
+- **Frontend:** Next.js 15, React 19, TypeScript
+- **UI Library:** Material-UI (MUI) v7
+- **Authentication:** JWT (jsonwebtoken) with bcrypt password hashing
+- **API:** OpenAPI/Swagger documentation (next-openapi-gen)
+
+
+#### **Infrastructure**
+- **Database:** AWS DynamoDB
+- **Cloud Provider:** AWS (using AWS SDK v3)
+- **Environment:** Node.js with environment variables via dotenv
+
+
+#### **Deployment & Development**
+- **Code Quality:** ESLint, Prettier with import sorting
+- **API Documentation:** Swagger UI available at /doc endpoint
+
+`;
 
 export const SECTIONS_CONFIG: {
   [key in SECTIONS]: {
