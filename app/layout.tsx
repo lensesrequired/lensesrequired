@@ -93,7 +93,7 @@ export default function RootLayout({
                     <li key={section} className="flex items-center gap-2 ml-4">
                       <AiFillFileMarkdown />
                       <a
-                        href={`#${section}`}
+                        href={`/${section}`}
                         className="text-gray-200 hover:text-violet-400 transition-colors"
                       >
                         {SECTIONS_CONFIG[section].fileName}
